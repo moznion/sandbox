@@ -1,1 +1,1 @@
-script: prove -PPretty -lrv t
+script: prove -PPretty -lrv -j3 t
