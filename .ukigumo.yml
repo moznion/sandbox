@@ -1,1 +1,4 @@
-script: prove -PPretty -lrv -j3 t
+before_install:
+  - "whoami"
+  - "cpanm -L $HOME/.ukigumo/sandbox/extlib Test::More -n"
+script: prove -lrv t
