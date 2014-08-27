@@ -1,4 +1,5 @@
 before_install:
   - "whoami"
+  - "echo $HOME"
   - "cpanm -L $HOME/.ukigumo/sandbox/extlib Test::More -n"
 script: prove -lrv t
